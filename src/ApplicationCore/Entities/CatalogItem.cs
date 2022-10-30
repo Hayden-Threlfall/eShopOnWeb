@@ -8,6 +8,7 @@ public class CatalogItem : BaseEntity, IAggregateRoot
 {
     public string Name { get; private set; }
     public string Description { get; private set; }
+    public string Subtitle { get; private set; }
     public decimal Price { get; private set; }
     public string PictureUri { get; private set; }
     public int CatalogTypeId { get; private set; }
@@ -19,6 +20,7 @@ public class CatalogItem : BaseEntity, IAggregateRoot
         int catalogBrandId,
         string description,
         string name,
+        string subtitle,
         decimal price,
         string pictureUri)
     {
@@ -26,6 +28,7 @@ public class CatalogItem : BaseEntity, IAggregateRoot
         CatalogBrandId = catalogBrandId;
         Description = description;
         Name = name;
+        Subtitle = subtitle;
         Price = price;
         PictureUri = pictureUri;
     }
@@ -34,10 +37,12 @@ public class CatalogItem : BaseEntity, IAggregateRoot
     {
         Guard.Against.NullOrEmpty(details.Name, nameof(details.Name));
         Guard.Against.NullOrEmpty(details.Description, nameof(details.Description));
+        Guard.Against.NullOrEmpty(details.Subtitle, nameof(details.Subtitle));
         Guard.Against.NegativeOrZero(details.Price, nameof(details.Price));
 
         Name = details.Name;
         Description = details.Description;
+        Subtitle = details.Subtitle;
         Price = details.Price;
     }
 
@@ -67,12 +72,14 @@ public class CatalogItem : BaseEntity, IAggregateRoot
     {
         public string? Name { get; }
         public string? Description { get; }
+        public string? Subtitle { get; }
         public decimal Price { get; }
 
-        public CatalogItemDetails(string? name, string? description, decimal price)
+        public CatalogItemDetails(string? name, string? description, string? subtitle, decimal price)
         {
             Name = name;
             Description = description;
+            Subtitle = subtitle;
             Price = price;
         }
     }

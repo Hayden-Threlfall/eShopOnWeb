@@ -21,7 +21,7 @@ public class CatalogItemViewModelService : ICatalogItemViewModelService
 
         Guard.Against.Null(existingCatalogItem, nameof(existingCatalogItem));
 
-        CatalogItem.CatalogItemDetails details = new(viewModel.Name, existingCatalogItem.Description, viewModel.Price);
+        CatalogItem.CatalogItemDetails details = new(viewModel.Name, existingCatalogItem.Description, viewModel.Subtitle , viewModel.Price);
         existingCatalogItem.UpdateDetails(details);
         await _catalogItemRepository.UpdateAsync(existingCatalogItem);
     }

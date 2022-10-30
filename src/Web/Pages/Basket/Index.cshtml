@@ -9,6 +9,16 @@
     </div>
 </section>
 
+<script>
+    function RemoveAll() {
+        var input = document.getElementsByClassName("esh-basket-input");
+        for (var i = 0; i < input.length; i++)
+        {
+            input.item(i).value = 0;
+        }
+    }
+</script>
+
 <div class="container">
 
     @if (Model.BasketModel.Items.Any())
@@ -61,10 +71,12 @@
                         <section class="esh-basket-item col-xs-7"></section>
                     </article>
                 </div>
+
                 <div class="row">
                     <section class="esh-basket-item col-xs-1">
                         <a asp-page="/Index" class="btn esh-basket-checkout text-white">[ Continue Shopping ]</a>
                     </section>
+
                     <section class="esh-basket-item col-xs-push-7 col-xs-4">
 
                         <button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit"
@@ -72,6 +84,13 @@
                             [ Update ]
                         </button>
                         <a asp-page="./Checkout" class="btn esh-basket-checkout">[ Checkout ]</a>
+                    </section>
+
+                    <section class="esh-basket-item col-xs-pull-2 col-xs-1" style="left:-5%">
+                        <button class="btn esh-basket-checkout-remove" name="removebutton" value="" type="submit" onclick="RemoveAll();"
+                            asp-page-handler="Update">
+                            [ Remove All ]
+                        </button>
                     </section>
                 </div>
             </div>

@@ -84,18 +84,18 @@ public class CatalogContextSeed
     {
         return new List<CatalogItem>
             {
-                new(2,2, ".NET Bot Black Sweatshirt", ".NET Bot Black Sweatshirt", 19.5M,  "http://catalogbaseurltobereplaced/images/products/1.png"),
-                new(1,2, ".NET Black & White Mug", ".NET Black & White Mug", 8.50M, "http://catalogbaseurltobereplaced/images/products/2.png"),
-                new(2,5, "Prism White T-Shirt", "Prism White T-Shirt", 12,  "http://catalogbaseurltobereplaced/images/products/3.png"),
-                new(2,2, ".NET Foundation Sweatshirt", ".NET Foundation Sweatshirt", 12, "http://catalogbaseurltobereplaced/images/products/4.png"),
-                new(3,5, "Roslyn Red Sheet", "Roslyn Red Sheet", 8.5M, "http://catalogbaseurltobereplaced/images/products/5.png"),
-                new(2,2, ".NET Blue Sweatshirt", ".NET Blue Sweatshirt", 12, "http://catalogbaseurltobereplaced/images/products/6.png"),
-                new(2,5, "Roslyn Red T-Shirt", "Roslyn Red T-Shirt",  12, "http://catalogbaseurltobereplaced/images/products/7.png"),
-                new(2,5, "Kudu Purple Sweatshirt", "Kudu Purple Sweatshirt", 8.5M, "http://catalogbaseurltobereplaced/images/products/8.png"),
-                new(1,5, "Cup<T> White Mug", "Cup<T> White Mug", 12, "http://catalogbaseurltobereplaced/images/products/9.png"),
-                new(3,2, ".NET Foundation Sheet", ".NET Foundation Sheet", 12, "http://catalogbaseurltobereplaced/images/products/10.png"),
-                new(3,2, "Cup<T> Sheet", "Cup<T> Sheet", 8.5M, "http://catalogbaseurltobereplaced/images/products/11.png"),
-                new(2,5, "Prism White TShirt", "Prism White TShirt", 12, "http://catalogbaseurltobereplaced/images/products/12.png")
+                new(2,2, ".NET Bot Black Sweatshirt", ".NET Bot Black Sweatshirt", "TEST", 19.5M, "http://catalogbaseurltobereplaced/images/products/1.png"),
+                new(1,2, ".NET Black & White Mug", ".NET Black & White Mug", "TEST", 8.50M, "http://catalogbaseurltobereplaced/images/products/2.png"),
+                new(2,5, "Prism White T-Shirt", "Prism White T-Shirt", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/3.png"),
+                new(2,2, ".NET Foundation Sweatshirt", ".NET Foundation Sweatshirt", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/4.png"),
+                new(3,5, "Roslyn Red Sheet", "Roslyn Red Sheet", "TEST", 8.5M, "http://catalogbaseurltobereplaced/images/products/5.png"),
+                new(2,2, ".NET Blue Sweatshirt", ".NET Blue Sweatshirt", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/6.png"),
+                new(2,5, "Roslyn Red T-Shirt", "Roslyn Red T-Shirt", "TEST",  12, "http://catalogbaseurltobereplaced/images/products/7.png"),
+                new(2,5, "Kudu Purple Sweatshirt", "Kudu Purple Sweatshirt", "TEST", 8.5M, "http://catalogbaseurltobereplaced/images/products/8.png"),
+                new(1,5, "Cup<T> White Mug", "Cup<T> White Mug", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/9.png"),
+                new(3,2, ".NET Foundation Sheet", ".NET Foundation Sheet", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/10.png"),
+                new(3,2, "Cup<T> Sheet", "Cup<T> Sheet", "TEST", 8.5M, "http://catalogbaseurltobereplaced/images/products/11.png"),
+                new(2,5, "Prism White TShirt", "Prism White TShirt", "TEST", 12, "http://catalogbaseurltobereplaced/images/products/12.png")
             };
     }
 }

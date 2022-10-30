@@ -12,12 +12,12 @@
     <div class="container">
         <form method="get">
             <label class="esh-catalog-label" data-title="brand">
-                <select asp-for="@Model.CatalogModel.BrandFilterApplied" asp-items="@Model.CatalogModel.Brands" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.CatalogModel.BrandFilterApplied" asp-items="@Model.CatalogModel.Brands" class="esh-catalog-filter" onchange="submit()"></select> <!-- Added onchange="submit()" to auto refresh on select  -->
             </label>
             <label class="esh-catalog-label" data-title="type">
-                <select asp-for="@Model.CatalogModel.TypesFilterApplied" asp-items="@Model.CatalogModel.Types" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.CatalogModel.TypesFilterApplied" asp-items="@Model.CatalogModel.Types" class="esh-catalog-filter" onchange="submit()"></select> <!-- Added onchange="submit()" to auto refresh on select  -->
             </label>
-            <input class="esh-catalog-send" type="image" src="~/images/arrow-right.svg" />
+            <!-- <input class="esh-catalog-send" type="image" src="~/images/arrow-right.svg" /> #OLD Submit Button# -->
         </form>
     </div>
 </section>

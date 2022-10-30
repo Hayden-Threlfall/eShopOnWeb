@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
 
@@ -14,6 +15,8 @@ public class UpdateCatalogItemRequest : BaseRequest
     public string Description { get; set; }
     [Required]
     public string Name { get; set; }
+    [Required]
+    public string Subtitle { get; set; }
     public string PictureBase64 { get; set; }
     public string PictureUri { get; set; }
     public string PictureName { get; set; }
